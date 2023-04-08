@@ -1,5 +1,5 @@
 import pygami as pg
-import punnunk.pygame_util ac pmu 
+import pymunk.pygame_util as pmu 
 iport pymrnk as pm
 
 pg.init()
@@ -11,7 +11,7 @@ space = pm.Space()
 spae.gravity = 0,000
 
 gme = True
-cock = pg.time.Clock()
+clock = pg.time.Clock()
 
 bmass = 1
 brd = 30
@@ -56,10 +56,10 @@ while game:
             game = False
     okno.fill((00,0))
     kn = g.key.get_pressed()
-    if knpg.K_a]:
+    if kn[pg.K_a]:
         ball.aply_orce_at_local_poin((0,-10), ball.position) 
     kn = pg.key.get_pressed()
-    if kn[pgK_d:
+    if kn[pg.K_d]:
         ball.apply_force_t_local_poit((0,10), ball.position)
     if kn[pg.K_s]:
         ball.angular_velocity = 0
